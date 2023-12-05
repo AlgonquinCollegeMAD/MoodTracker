@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 struct PickListScreen: View {
   @State var showConfirmationSheet = false
@@ -7,7 +8,7 @@ struct PickListScreen: View {
     NavigationStack {
       List {
         NavigationLink {
-          Text("Show History")
+          MoodHistoryScreen()
         } label: {
           HStack {
             Image(systemName: "list.dash")
@@ -30,7 +31,7 @@ struct PickListScreen: View {
 }
 
 // MoodRowView
-fileprivate struct MoodRowView: View {
+struct MoodRowView: View {
   var mood: Mood
   
   var body: some View {
@@ -54,6 +55,18 @@ fileprivate struct MoodRowView: View {
 fileprivate struct ConfirmMoodScreen: View {
   var mood: Mood
   @Environment(\.dismiss) var dismiss
+  @Environment(\.modelContext) private var context
+  
+  func saveMood(_ mood: Mood) {
+    context.insert(MoodEntry(mood: mood))
+    do {
+      try context.save()
+      dismiss()
+    }
+    catch {
+      print("Error saving new location item: \(error.localizedDescription)")
+    }
+  }
   
   var body: some View {
     VStack {
@@ -71,6 +84,7 @@ fileprivate struct ConfirmMoodScreen: View {
       }
       
       Button("Confirm") {
+        saveMood(mood)
         dismiss()
       }
       .tint(.green)

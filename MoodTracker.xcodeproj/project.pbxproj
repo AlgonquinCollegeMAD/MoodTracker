@@ -14,6 +14,7 @@
 		105B449E2B1FADF00022030F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105B449D2B1FADF00022030F /* Preview Assets.xcassets */; };
 		105B44A92B1FAE300022030F /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B44A82B1FAE300022030F /* Mood.swift */; };
 		105B44AB2B1FB3C80022030F /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B44AA2B1FB3C80022030F /* MoodEntry.swift */; };
+		105B44AD2B1FD1B20022030F /* MoodHistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B44AC2B1FD1B20022030F /* MoodHistoryScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		105B449D2B1FADF00022030F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		105B44A82B1FAE300022030F /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		105B44AA2B1FB3C80022030F /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		105B44AC2B1FD1B20022030F /* MoodHistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodHistoryScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				105B44962B1FADEE0022030F /* MoodTrackerApp.swift */,
 				105B44982B1FADEE0022030F /* PickListScreen.swift */,
+				105B44AC2B1FD1B20022030F /* MoodHistoryScreen.swift */,
 				105B44A82B1FAE300022030F /* Mood.swift */,
 				105B449A2B1FADF00022030F /* Assets.xcassets */,
 				105B449C2B1FADF00022030F /* Preview Content */,
@@ -201,6 +204,7 @@
 				105B44992B1FADEE0022030F /* PickListScreen.swift in Sources */,
 				105B44972B1FADEE0022030F /* MoodTrackerApp.swift in Sources */,
 				105B44A92B1FAE300022030F /* Mood.swift in Sources */,
+				105B44AD2B1FD1B20022030F /* MoodHistoryScreen.swift in Sources */,
 				105B44AB2B1FB3C80022030F /* MoodEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
