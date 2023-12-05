@@ -3,16 +3,19 @@ import SwiftData
 
 struct PickListScreen: View {
   @State var showConfirmationSheet = false
+  @Query var list: [MoodEntry]
   
   var body: some View {
     NavigationStack {
       List {
-        NavigationLink {
-          MoodHistoryScreen()
-        } label: {
-          HStack {
-            Image(systemName: "list.dash")
-            Text("History")
+        if !list.isEmpty {
+          NavigationLink {
+            MoodHistoryScreen()
+          } label: {
+            HStack {
+              Image(systemName: "list.dash")
+              Text("^[\(list.count) entry](inflect: true)")
+            }
           }
         }
         ForEach(Mood.allCases, id: \.self) { mood in
