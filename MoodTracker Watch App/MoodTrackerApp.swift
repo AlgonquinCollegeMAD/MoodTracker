@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 @main
 struct MoodTracker_Watch_AppApp: App {
@@ -6,5 +7,10 @@ struct MoodTracker_Watch_AppApp: App {
     WindowGroup {
       PickListScreen()
     }
+    .modelContainer(
+      for: [
+        MoodEntry.self
+      ]
+    )
   }
 }
