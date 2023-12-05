@@ -15,6 +15,8 @@
 		105B44A92B1FAE300022030F /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B44A82B1FAE300022030F /* Mood.swift */; };
 		105B44AB2B1FB3C80022030F /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B44AA2B1FB3C80022030F /* MoodEntry.swift */; };
 		105B44AD2B1FD1B20022030F /* MoodHistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B44AC2B1FD1B20022030F /* MoodHistoryScreen.swift */; };
+		105B44B12B1FD7BA0022030F /* MoodRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B44B02B1FD7BA0022030F /* MoodRowView.swift */; };
+		105B44B42B1FD8070022030F /* ConfirmMoodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B44B32B1FD8070022030F /* ConfirmMoodScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		105B44A82B1FAE300022030F /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		105B44AA2B1FB3C80022030F /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
 		105B44AC2B1FD1B20022030F /* MoodHistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodHistoryScreen.swift; sourceTree = "<group>"; };
+		105B44B02B1FD7BA0022030F /* MoodRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRowView.swift; sourceTree = "<group>"; };
+		105B44B32B1FD8070022030F /* ConfirmMoodScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMoodScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +89,11 @@
 			isa = PBXGroup;
 			children = (
 				105B44962B1FADEE0022030F /* MoodTrackerApp.swift */,
-				105B44982B1FADEE0022030F /* PickListScreen.swift */,
-				105B44AC2B1FD1B20022030F /* MoodHistoryScreen.swift */,
-				105B44A82B1FAE300022030F /* Mood.swift */,
+				105B44AE2B1FD76C0022030F /* Screens */,
+				105B44B22B1FD7D20022030F /* Views */,
+				105B44AF2B1FD78D0022030F /* Models */,
 				105B449A2B1FADF00022030F /* Assets.xcassets */,
 				105B449C2B1FADF00022030F /* Preview Content */,
-				105B44AA2B1FB3C80022030F /* MoodEntry.swift */,
 			);
 			path = "MoodTracker Watch App";
 			sourceTree = "<group>";
@@ -101,6 +104,33 @@
 				105B449D2B1FADF00022030F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		105B44AE2B1FD76C0022030F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				105B44982B1FADEE0022030F /* PickListScreen.swift */,
+				105B44B32B1FD8070022030F /* ConfirmMoodScreen.swift */,
+				105B44AC2B1FD1B20022030F /* MoodHistoryScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		105B44AF2B1FD78D0022030F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				105B44A82B1FAE300022030F /* Mood.swift */,
+				105B44AA2B1FB3C80022030F /* MoodEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		105B44B22B1FD7D20022030F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				105B44B02B1FD7BA0022030F /* MoodRowView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105B44B12B1FD7BA0022030F /* MoodRowView.swift in Sources */,
 				105B44992B1FADEE0022030F /* PickListScreen.swift in Sources */,
+				105B44B42B1FD8070022030F /* ConfirmMoodScreen.swift in Sources */,
 				105B44972B1FADEE0022030F /* MoodTrackerApp.swift in Sources */,
 				105B44A92B1FAE300022030F /* Mood.swift in Sources */,
 				105B44AD2B1FD1B20022030F /* MoodHistoryScreen.swift in Sources */,
