@@ -53,6 +53,7 @@ fileprivate struct MoodRowView: View {
 // ConfirmMoodScreen
 fileprivate struct ConfirmMoodScreen: View {
   var mood: Mood
+  @Environment(\.dismiss) var dismiss
   
   var body: some View {
     VStack {
@@ -70,7 +71,7 @@ fileprivate struct ConfirmMoodScreen: View {
       }
       
       Button("Confirm") {
-        //Confirm
+        dismiss()
       }
       .tint(.green)
     }
